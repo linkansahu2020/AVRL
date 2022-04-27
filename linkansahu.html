@@ -37,7 +37,7 @@
             left: 0;
             z-index: 7;
             background-color: #ff5624;
-            animation: 8s linear 0s infinite alternate a-move;
+            animation: 8s linear 0s infinite a-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(2){
@@ -45,7 +45,7 @@
             right: 0;
             z-index: 6;
             background-color: #ffee5b;
-            animation: 8s linear 0s infinite alternate b-move;
+            animation: 8s linear 0s infinite b-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(3){
@@ -53,7 +53,7 @@
             left: 0;
             z-index: 2;
             background-color: #2f7d32;
-            animation: 8s linear 0s infinite alternate c-move;
+            animation: 8s linear 0s infinite c-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(4){
@@ -61,7 +61,7 @@
             right: 0;
             z-index: 5;
             background-color: #2cb5f9;
-            animation: 8s linear 0s infinite alternate d-move;
+            animation: 8s linear 0s infinite d-move;
             animation-play-state: paused;
         }
         @keyframes a-move {
@@ -69,28 +69,36 @@
                 background: #ff5624;
                 width: 3.5vw;
             }
-            16% {
+            12% {
                 background: #2f7d32;
                 width: 12vw;
             }
-            33% {
+            24% {
                 background: #2f7d32;
                 width: 3.5vw;
+            }
+            36% {
+                background: #2cb5f9;
+                width: 12vw;
             }
             49% {
                 background: #2cb5f9;
-                width: 12vw;
-            }
-            69% {
-                background: #2cb5f9;
                 width: 3.5vw;
             }
-            85% {
+            62% {
                 background: #ffee5b;
+                width: 12vw;
+            }
+            74% {
+                background: #ffee5b;
+                width: 3.5vw;
+            }
+            87% {
+                background: #ff5624;
                 width: 12vw;
             }
             100% {
-                background: #ffee5b;
+                background: #ff5624;
                 width: 3.5vw;
             }
         }
@@ -99,28 +107,36 @@
                 background: #ffee5b;
                 height: 3.5vw;
             }
-            16% {
+            12% {
                 background: #ff5624;
                 height: 12vw;
             }
-            33% {
+            24% {
                 background: #ff5624;
                 height: 3.5vw;
+            }
+            36% {
+                background: #2f7d32;
+                height: 12vw;
             }
             49% {
                 background: #2f7d32;
-                height: 12vw;
-            }
-            69% {
-                background: #2f7d32;
                 height: 3.5vw;
             }
-            85% {
+            62% {
                 background: #2cb5f9;
+                height: 12vw;
+            }
+            74% {
+                background: #2cb5f9;
+                height: 3.5vw;
+            }
+            87% {
+                background: #ffee5b;
                 height: 12vw;
             }
             100% {
-                background: #2cb5f9;
+                background: #ffee5b;
                 height: 3.5vw;
             }
         }
@@ -129,28 +145,36 @@
                 background: #2f7d32;
                 height: 3.5vw;
             }
-            16% {
+            12% {
                 background: #2cb5f9;
                 height: 12vw;
             }
-            33% {
+            24% {
                 background: #2cb5f9;
                 height: 3.5vw;
+            }
+            36% {
+                background: #ffee5b;
+                height: 12vw;
             }
             49% {
                 background: #ffee5b;
-                height: 12vw;
-            }
-            69% {
-                background: #ffee5b;
                 height: 3.5vw;
             }
-            85% {
+            62% {
                 background: #ff5624;
+                height: 12vw;
+            }
+            74% {
+                background: #ff5624;
+                height: 3.5vw;
+            }
+            87% {
+                background: #2f7d32;
                 height: 12vw;
             }
             100% {
-                background: #ff5624;
+                background: #2f7d32;
                 height: 3.5vw;
             }
         }
@@ -159,28 +183,36 @@
                 background: #2cb5f9;
                 width: 3.5vw;
             }
-            16% {
+            12% {
                 background: #ffee5b;
                 width: 12vw;
             }
-            33% {
+            24% {
                 background: #ffee5b;
                 width: 3.5vw;
+            }
+            36% {
+                background: #ff5624;
+                width: 12vw;
             }
             49% {
                 background: #ff5624;
-                width: 12vw;
-            }
-            69% {
-                background: #ff5624;
                 width: 3.5vw;
             }
-            85% {
+            62% {
                 background: #2f7d32;
+                width: 12vw;
+            }
+            74% {
+                background: #2f7d32;
+                width: 3.5vw;
+            }
+            87% {
+                background: #2cb5f9;
                 width: 12vw;
             }
             100% {
-                background: #2f7d32;
+                background: #2cb5f9;
                 width: 3.5vw;
             }
         };
