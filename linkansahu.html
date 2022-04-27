@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 12vw;
+            height: 12vw;
+            margin: auto;
+            margin-top: 20vh;
+            position: relative;
+        }
+        #buttom_container{
+            width: 12vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5vh;
+        }
+        #buttom_container>button{
+            background-color: teal;
+            color: white;
+            padding: .7vh 1.2vw;
+            font-size: 15px;
+        }
+        #container>div{
+            position: absolute;
+            width: 3.5vw;
+            height: 3.5vw;
+            border-radius: 50px;
+        }
+        #container>div:nth-child(1){
+            top: 0;
+            left: 0;
+            z-index: 7;
+            background-color: #ff5624;
+            animation: 1.5s linear 0s infinite alternate x-move;
+            animation-play-state: paused;
+        }
+        #container>div:nth-child(2){
+            top: 0;
+            right: 0;
+            z-index: 6;
+            background-color: #ffee5b;
+            animation: 1.5s linear 0s infinite alternate y-move;
+            animation-play-state: paused;
+        }
+        #container>div:nth-child(3){
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background-color: #2f7d32;
+            animation: 1.5s linear 0s infinite alternate y-move;
+            animation-play-state: paused;
+        }
+        #container>div:nth-child(4){
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            background-color: #2cb5f9;
+            -moz-animation: c-move 1s linear 0s infinite;
+            animation: x-move 1.5s linear 0s infinite alternate;
+            animation-play-state: paused;
+        }
+        @keyframes x-move {
+            from{
+
+            } to{
+                width: 12vw;
+            }
+        }
+        @-moz-keyframes c-move {
+            from{
+                -moz-background-color: #2cb5f9;
+            }
+            to{
+                -moz-background-color: #2f7d32;
+            }
+        }
+        @keyframes y-move {
+            from{
+
+            } to{
+                height: 12vw;
+            }
+        };
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="color_div horizontal"></div>
+        <div class="color_div vertical"></div>
+        <div class="color_div horizontal"></div>
+        <div class="color_div vertical hello"></div>
+    </div>
+    <div id="buttom_container">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    let element = document.getElementsByClassName('color_div');
+    const runAnimation = ()=>{
+        element[0].style.animationPlayState='running';
+        element[1].style.animationPlayState='running';
+        element[2].style.animationPlayState='running';
+        element[3].style.animationPlayState='running';
+    }
+    document.getElementById('start').addEventListener('click',runAnimation);
+    document.getElementById('stop').onclick = ()=>{
+        console.log("hii")
+        element[0].style.animationPlayState='paused';
+        element[1].style.animationPlayState='paused';
+        element[2].style.animationPlayState='paused';
+        element[3].style.animationPlayState='paused';
+    }
+</script>
