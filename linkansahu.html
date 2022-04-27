@@ -37,7 +37,7 @@
             left: 0;
             z-index: 7;
             background-color: #ff5624;
-            animation: 1.5s linear 0s infinite alternate x-move;
+            animation: 8s linear 0s infinite alternate a-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(2){
@@ -45,7 +45,7 @@
             right: 0;
             z-index: 6;
             background-color: #ffee5b;
-            animation: 1.5s linear 0s infinite alternate y-move;
+            animation: 8s linear 0s infinite alternate b-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(3){
@@ -53,7 +53,7 @@
             left: 0;
             z-index: 2;
             background-color: #2f7d32;
-            animation: 1.5s linear 0s infinite alternate y-move;
+            animation: 8s linear 0s infinite alternate c-move;
             animation-play-state: paused;
         }
         #container>div:nth-child(4){
@@ -61,30 +61,127 @@
             right: 0;
             z-index: 5;
             background-color: #2cb5f9;
-            -moz-animation: c-move 1s linear 0s infinite;
-            animation: x-move 1.5s linear 0s infinite alternate;
+            animation: 8s linear 0s infinite alternate d-move;
             animation-play-state: paused;
         }
-        @keyframes x-move {
-            from{
-
-            } to{
+        @keyframes a-move {
+            0% {
+                background: #ff5624;
+                width: 3.5vw;
+            }
+            16% {
+                background: #2f7d32;
                 width: 12vw;
             }
-        }
-        @-moz-keyframes c-move {
-            from{
-                -moz-background-color: #2cb5f9;
+            33% {
+                background: #2f7d32;
+                width: 3.5vw;
             }
-            to{
-                -moz-background-color: #2f7d32;
+            49% {
+                background: #2cb5f9;
+                width: 12vw;
+            }
+            69% {
+                background: #2cb5f9;
+                width: 3.5vw;
+            }
+            85% {
+                background: #ffee5b;
+                width: 12vw;
+            }
+            100% {
+                background: #ffee5b;
+                width: 3.5vw;
             }
         }
-        @keyframes y-move {
-            from{
-
-            } to{
+        @keyframes b-move {
+            0% {
+                background: #ffee5b;
+                height: 3.5vw;
+            }
+            16% {
+                background: #ff5624;
                 height: 12vw;
+            }
+            33% {
+                background: #ff5624;
+                height: 3.5vw;
+            }
+            49% {
+                background: #2f7d32;
+                height: 12vw;
+            }
+            69% {
+                background: #2f7d32;
+                height: 3.5vw;
+            }
+            85% {
+                background: #2cb5f9;
+                height: 12vw;
+            }
+            100% {
+                background: #2cb5f9;
+                height: 3.5vw;
+            }
+        }
+        @keyframes c-move {
+            0% {
+                background: #2f7d32;
+                height: 3.5vw;
+            }
+            16% {
+                background: #2cb5f9;
+                height: 12vw;
+            }
+            33% {
+                background: #2cb5f9;
+                height: 3.5vw;
+            }
+            49% {
+                background: #ffee5b;
+                height: 12vw;
+            }
+            69% {
+                background: #ffee5b;
+                height: 3.5vw;
+            }
+            85% {
+                background: #ff5624;
+                height: 12vw;
+            }
+            100% {
+                background: #ff5624;
+                height: 3.5vw;
+            }
+        }
+        @keyframes d-move {
+            0% {
+                background: #2cb5f9;
+                width: 3.5vw;
+            }
+            16% {
+                background: #ffee5b;
+                width: 12vw;
+            }
+            33% {
+                background: #ffee5b;
+                width: 3.5vw;
+            }
+            49% {
+                background: #ff5624;
+                width: 12vw;
+            }
+            69% {
+                background: #ff5624;
+                width: 3.5vw;
+            }
+            85% {
+                background: #2f7d32;
+                width: 12vw;
+            }
+            100% {
+                background: #2f7d32;
+                width: 3.5vw;
             }
         };
     </style>
